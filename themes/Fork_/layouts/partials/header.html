@@ -1,0 +1,68 @@
+<header>  
+    <nav class="nav">
+        <!--
+        <a href="/" id="logo" class="inline-block serif pt-2" aria-label="Accueil"><span>Politiques</span> <br>des communs</a>
+        <button aria-expanded="false" aria-controls="menu" aria-labelledby="menu-icon">
+        </button>-->
+        
+        <a href="/" id="logo">
+          <img src="/media/logo-fork_wasselone.png" alt="logo Fork_Wasselonne">
+        </a>
+        <ul id="menu" role="menu" class="hidden show-md bg-color--themes">
+            <li role="menuitem">
+              <a href="/territoire" alt="Aller à la page Territoire">
+                <button class="green {{ if eq .Section "territoire" }}active{{ end }}">Un territoire &#x21E2;</button>
+              </a>
+            </li>
+            <li role="menuitem">
+              <a href="/projet" alt="Aller à la page Projet">
+                <button class="yellow {{ if eq .Section "projet" }}active{{ end }}">Un projet de design &#x21E2;</button>
+              </a>
+            </li>
+            <li role="menuitem">
+              <a href="/fiction" alt="Aller à la page Fiction">
+                <button class="red {{ if eq .Section "fiction" }}active{{ end }}">Une fiction &#x21E2;</button>
+              </a>
+            </li>
+            <li role="menuitem">
+              <a href="/audela" alt="En savoir plus sur le projet">
+                <button class="{{ if eq .Section "audela" }}active{{ end }}">Au-dela &#x21E2;</button>
+              </a>
+            </li>
+        </ul>
+    </nav>
+  
+  <div class="path">
+    <nav>
+      <ol>
+        <li>
+          <a href="/" alt="Retour à la page d'accueil">
+            <span>fork_wasselonne</span>
+          </a>
+        </li>
+        <li>
+          <a href="/{{ .Page.Section }}" alt="Retour à la page {{ .Page.Section }}">
+            <span class="name">{{ .Page.Section }}</span>
+          </a>
+        </li>
+        <li>
+          <a href="/{{ .Page.Section }}/{{ .Page.Params.subsection }}" alt="Retour à la page {{ .Page.Params.subsection }}">
+            <span class="name">{{ .Page.Params.subsection }}</span>
+          </a>
+        </li>
+        <li>
+          <span class="name">{{ .Page.Title }}</span>
+        </li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="header-left">
+    <a href="/audela#contact" class="contact" alt="Contacter">
+      <button >Contact &#x21E2;</button>
+    </a>
+    <a href="https://github.com" alt="lien du Github">
+      <button class="black">Fork &#x2197;</button>
+    </a>
+  </div>
+</header>

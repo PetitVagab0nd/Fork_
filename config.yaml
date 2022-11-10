@@ -2,11 +2,7 @@ languageCode: fr
 languageName: Français
 defaultContentLanguage: fr
 title: Fork_Wasselonne
-theme: paged.js-book
+theme: Fork_
 author:
   name: Timothé Jeanne
-markup:
-  goldmark:
-    renderer:
-      hardWraps: true
-      unsafe: true
+  homepage: https://www.timothejeanne.net

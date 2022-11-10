@@ -1,0 +1,8 @@
+name = ""
+license = "GPL-3.0-only"
+description = "Hugo theme to create personal website easy to modify with markdown files"
+tags = ["hugo", "hugo-theme", "markdown"]
+[author]
+    Name = "Timothé Jeanne"
+    Website = "timothejeanne.net"
+

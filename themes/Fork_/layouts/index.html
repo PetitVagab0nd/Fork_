@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+  {{- partial "head.html" . -}}
+  <style>
+    .nav{
+      display: none;
+    }
+  </style>
+
+  <body class="home">
+    {{- partial "header.html" . -}}
+
+
+    <main class="home">
+      <section class="home_introduction">
+        <div class="home_logo">
+          <img src="media/logo-fork_wasselone.png" alt="logo Fork_Wasselonne">
+        </div>
+        <div class="home home_texte">
+          {{ .Content }}
+        </div>
+      </section>
+      <section class="home_suite">
+        <a href="/territoire" alt="Aller à la page Territoire">
+          <button class="green">Un territoire &#x21E2;</button>
+        </a>
+        <a href="/projet" alt="Aller à la page Projet">
+          <button class="yellow">Un projet de design &#x21E2;</button>
+        </a>
+        <a href="/fiction" alt="Aller à la page Fiction">
+          <button class="red">Une fiction &#x21E2;</button>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
